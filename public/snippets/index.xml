@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snippets on My New Hugo Site</title>
+    <link>https://shaunkyle.github.io/VEXcode-Tutorials/snippets/</link>
+    <description>Recent content in Snippets on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Aug 2023 10:17:44 +1000</lastBuildDate><atom:link href="https://shaunkyle.github.io/VEXcode-Tutorials/snippets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Loop</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/snippets/control-loop/</link>
+      <pubDate>Mon, 31 Jul 2023 20:38:16 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/snippets/control-loop/</guid>
+      <description>while True: # Sense: What position are the joysticks pushed to? joy_y_axis = controller.axis1.position() joy_x_axis = controller.axis2.position() # Decide: Is the position value too small to care about? if abs(joy_y_axis) &amp;lt; 10: joy_y_axis = 0 if abs(joy_x_axis) &amp;lt; 10: joy_x_axis = 0 # Act: Arcade drive! left_percent = joy_y_axis + joy_x_axis/2 right_percent = joy_y_axis - joy_x_axis/2 motor_left.set_velocity(left_percent) motor_right.set_velocity(right_percent) # Explanation for pause... wait(1, MSEC) # Go back to beginning of while loop, repeat.</description>
+    </item>
+    
+  </channel>
+</rss>

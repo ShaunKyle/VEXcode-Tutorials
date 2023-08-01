@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VEXcode on My New Hugo Site</title>
+    <link>https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/</link>
+    <description>Recent content in VEXcode on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Aug 2023 10:07:35 +1000</lastBuildDate><atom:link href="https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update Firmware</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/update-firmware/</link>
+      <pubDate>Tue, 01 Aug 2023 11:05:49 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/update-firmware/</guid>
+      <description>Resources https://kb.vex.com/hc/en-us/articles/360047646811-Get-Started-with-VEXcode-V5-Firmware
+https://kb.vex.com/hc/en-us/articles/360055338911-V5-Firmware-Changelog</description>
+    </item>
+    
+    <item>
+      <title>Access Help</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/access-help/</link>
+      <pubDate>Tue, 01 Aug 2023 10:20:39 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/vexcode/access-help/</guid>
+      <description>Turn this page into two GIFS.</description>
+    </item>
+    
+  </channel>
+</rss>

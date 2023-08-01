@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Control Loop</title>
+
+        
+        <link rel="stylesheet" href="https://shaunkyle.github.io/VEXcode-Tutorials/sass/main.min.css">
+    </head>
+    <body>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/snippets">Snippets</a></li>
+        <li><a href="/tutorials">Tutorials</a></li>
+        <li><a href="/vexcode">VEXcode</a></li>
+    </ul>
+</nav>
+
+        
+ <h1>Control Loop</h1>
+ <p>July 31, 2023</p>
+ <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sense: What position are the joysticks pushed to?</span>
+</span></span><span style="display:flex;"><span>    joy_y_axis <span style="color:#f92672">=</span> controller<span style="color:#f92672">.</span>axis1<span style="color:#f92672">.</span>position()
+</span></span><span style="display:flex;"><span>    joy_x_axis <span style="color:#f92672">=</span> controller<span style="color:#f92672">.</span>axis2<span style="color:#f92672">.</span>position()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Decide: Is the position value too small to care about?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> abs(joy_y_axis) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>        joy_y_axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> abs(joy_x_axis) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>        joy_x_axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Act: Arcade drive!</span>
+</span></span><span style="display:flex;"><span>    left_percent <span style="color:#f92672">=</span> joy_y_axis <span style="color:#f92672">+</span> joy_x_axis<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    right_percent <span style="color:#f92672">=</span> joy_y_axis <span style="color:#f92672">-</span> joy_x_axis<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    motor_left<span style="color:#f92672">.</span>set_velocity(left_percent)
+</span></span><span style="display:flex;"><span>    motor_right<span style="color:#f92672">.</span>set_velocity(right_percent)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Explanation for pause...</span>
+</span></span><span style="display:flex;"><span>    wait(<span style="color:#ae81ff">1</span>, MSEC)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Go back to beginning of while loop, repeat.</span>
+</span></span></code></pre></div><p>Experience/Tutorial ideas</p>
+<ul>
+<li>Controlling multiple things in a control loop</li>
+<li>Where is the control loop for autonomous period?</li>
+</ul>
+
+
+
+        <footer>© <script>document.write(new Date().getFullYear())</script> Shaun Kyle</footer>
+    </body>
+</html>

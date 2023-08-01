@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Competition Periods</title>
+
+        
+        <link rel="stylesheet" href="https://shaunkyle.github.io/VEXcode-Tutorials/sass/main.min.css">
+    </head>
+    <body>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/snippets">Snippets</a></li>
+        <li><a href="/tutorials">Tutorials</a></li>
+        <li><a href="/vexcode">VEXcode</a></li>
+    </ul>
+</nav>
+
+        
+ <h1>Competition Periods</h1>
+ <p>July 29, 2023</p>
+ <h1 id="introduction">Introduction</h1>
+<p>A VEX Robotics Competition match is 2 minutes long, split into two different time periods: Autonomous Period (15 seconds) and Driver Controlled Period (1 minute 45 seconds).</p>
+<p>During the Autonomous Period, robots operate without any help from humans using pre-programmed commands and sensor inputs.</p>
+<p>During the Driver Controlled Period, humans can operate their robots via remote control.</p>
+<p><em><strong>How does the robot know when it is Autonomous or Driver Controlled Period?</strong></em></p>
+<p>Learning outcomes (SOLO taxonomy is useful here):</p>
+<ol>
+<li>Identify the main elements of the Competition Template.</li>
+<li>Describe the purpose of using the elements in the Competition Template.</li>
+<li>Apply the elements of the Competition Template to an existing robot program.</li>
+<li>Extra? What is an Event? How does a callback function work? Can you make your own?</li>
+</ol>
+<p>Tutorial should probably be spread across multiple pages?</p>
+<h1 id="level-1-identify">Level 1: Identify</h1>
+<p>Open example program.</p>
+
+
+
+
+<div class="shortcode-quiz">
+    <form onsubmit="">
+        <fieldset>
+            <legend>Question: What is the</legend>
+            
+            <label>
+                <input type="radio" name="option" value="a">a
+            </label><br>
+            
+            <label>
+                <input type="radio" name="option" value="b">b
+            </label><br>
+            
+            <label>
+                <input type="radio" name="option" value="c">c
+            </label><br>
+            
+            <input type="submit" value="Submit!">
+        </fieldset>
+    </form>
+
+    <p hidden>Correct!</p>
+    <p hidden>Try again.</p>
+</div>
+<p>Question that identifies the purpose of autonomous()</p>
+<p>Question that identifies the purpose of driver()</p>
+<p>Question that shows Competition(autonomous, driver) registers callback functions. The functions don&rsquo;t function on their own.</p>
+<p>Question that shows that &ldquo;pre_autonomous&rdquo; is not part of the Competition thing. It&rsquo;s just a function that we can choose to call before registering the Competition functions.</p>
+<h1 id="level-2-describe">Level 2: Describe</h1>
+<figure><img src="/vexcode-help-events.png" width="500"/>
+</figure>
+
+<h1 id="level-3-apply">Level 3: Apply</h1>
+
+
+
+        <footer>© <script>document.write(new Date().getFullYear())</script> Shaun Kyle</footer>
+    </body>
+</html>

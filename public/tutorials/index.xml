@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on My New Hugo Site</title>
+    <link>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/</link>
+    <description>Recent content in Tutorials on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jul 2023 18:49:53 +1000</lastBuildDate><atom:link href="https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identify</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/competition-periods/1_identify/</link>
+      <pubDate>Tue, 01 Aug 2023 11:15:35 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/competition-periods/1_identify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Competition Periods</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/tut2/</link>
+      <pubDate>Sat, 29 Jul 2023 18:56:48 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/tut2/</guid>
+      <description>Introduction A VEX Robotics Competition match is 2 minutes long, split into two different time periods: Autonomous Period (15 seconds) and Driver Controlled Period (1 minute 45 seconds).
+During the Autonomous Period, robots operate without any help from humans using pre-programmed commands and sensor inputs.
+During the Driver Controlled Period, humans can operate their robots via remote control.
+How does the robot know when it is Autonomous or Driver Controlled Period?</description>
+    </item>
+    
+    <item>
+      <title>Tut1</title>
+      <link>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/tut1/</link>
+      <pubDate>Sat, 29 Jul 2023 18:56:43 +1000</pubDate>
+      
+      <guid>https://shaunkyle.github.io/VEXcode-Tutorials/tutorials/tut1/</guid>
+      <description>an empty tutorial</description>
+    </item>
+    
+  </channel>
+</rss>
