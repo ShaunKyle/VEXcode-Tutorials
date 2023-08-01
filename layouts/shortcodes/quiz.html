@@ -1,0 +1,20 @@
+{{ $question := first 1 .Params }}
+{{ $options := after 1 .Params }}
+{{/*  First option is correct  */}}
+
+<div class="shortcode-quiz">
+    <form onsubmit="">
+        <fieldset>
+            <legend>Question: {{ .Get 0 }}</legend>
+            {{ range $options }}
+            <label>
+                <input type="radio" name="option" value="{{ . }}">{{ . }}
+            </label><br>
+            {{ end }}
+            <input type="submit" value="Submit!">
+        </fieldset>
+    </form>
+
+    <p hidden>Correct!</p>
+    <p hidden>Try again.</p>
+</div>

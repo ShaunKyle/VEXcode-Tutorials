@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <h1>List of tutorials</h1>
+    <ul>
+    {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }} - {{ .Date.Format "January, 2, 2006" }}</a>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}
